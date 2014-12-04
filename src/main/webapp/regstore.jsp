@@ -5,8 +5,8 @@
     String lname = request.getParameter("lastname");
     String email = request.getParameter("email");
     Class.forName("org.postgresql.Driver");
-    Connection con = DriverManager.getConnection("jdbc:postgresql://ec2-54-204-39-187.compute-1.amazonaws.com:5432/dbsmk5o5q2po2t?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory",
-		    	            "vsaruomebqzqeg", "ko7q_QOXnPQyMK0GK-cw6I50cH");
+    Connection con = DriverManager.getConnection("jdbc:postgresql://ec2-23-23-210-37.compute-1.amazonaws.com:5432/d65c6ed25bphue?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory",
+		    	            "knvniobbwtmdtl", "PmxU9wcPJpFzqB4t68A8NgctEj");
     Statement st = con.createStatement();
     int i=0;
     try

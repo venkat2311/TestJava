@@ -14,16 +14,16 @@
     i = st.executeUpdate("INSERT INTO salesforce.PATIENTREG__c(Name,FirstName__c,LastName__c,Email__c) values ('" + user + "','" + fname + "','" + lname + "','" + email + "')");
     if (i > 0)
     {        
-        out.print("Patient Details are registered successfully! "+"<a href='register.jsp'>Go to Register Page</a>");
+        out.print("Patient Details are registered successfully! "+"<a href='index.jsp'>Go to Register Page</a>");
     }
     else
     {       
-         out.print("Patient Details are not registered successfully! "+"<a href='register.jsp'>Go to Register Page</a>");
+         out.print("Patient Details are not registered successfully! "+"<a href='index.jsp'>Go to Register Page</a>");
     }    
     }
     catch(Exception e)
     {
-        out.print("Patient Details are not registered successfully! "+"<a href='register.jsp'>Go to Register Page</a>");
+        out.print("Patient Details are not registered successfully! "+"<a href='index.jsp'>Go to Register Page</a>");
     }
     st.close();
     con.close();
